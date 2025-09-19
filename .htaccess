@@ -1,0 +1,8 @@
+# Disable Directory Listing for Security
+Options -Indexes
+
+# Deny direct access to sensitive files
+<Files "common/config.php">
+    Order allow,deny
+    Deny from all
+</Files>
